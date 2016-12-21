@@ -1,18 +1,14 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { Link } from 'react-router';
+import Text from './preview/Text/Text';
 
-const App = ({ children }) =>
+const App = () =>
     <div>
-        <h1>Filter table</h1>
-        { children }
+        <Text text="Lorem ipsum" />
         <footer>
             <Link to="/">Filterable Table</Link>
             <Link to="/about">About</Link>
         </footer>
     </div>;
-
-App.propTypes = {
-    children: PropTypes.object
-};
 
 export default App;
