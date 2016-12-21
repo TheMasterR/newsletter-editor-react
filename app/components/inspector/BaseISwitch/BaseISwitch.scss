@@ -1,0 +1,30 @@
+.baseISwitch {
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    .baseISwitch-inner {
+        border-radius: 100%;
+        display: inline-block;
+        height: 16px;
+        margin: 2px 0 0 2px;
+        transition: margin .1s;
+        width: 16px;
+        &.on {
+            margin: 2px 0 0 12px;
+        }
+    }
+    &.white {
+        background-color: #fff;
+        .baseISwitch-inner {
+            background-color: #000;
+        }
+    }
+    &.black {
+        background-color: #000;
+        .baseISwitch-inner {
+            background-color: #fff;
+        }
+    }
+}

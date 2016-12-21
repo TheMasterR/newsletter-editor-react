@@ -4,7 +4,7 @@
 
 import React, { Component, PropTypes } from 'react';
 
-class Text extends Component {
+class BasePText extends Component {
     render() {
         const { text, color, fontSize } = this.props;
 
@@ -21,15 +21,15 @@ class Text extends Component {
     }
 }
 
-Text.propTypes = {
+BasePText.propTypes = {
     text: PropTypes.string.isRequired,
     color: PropTypes.string,
     fontSize: PropTypes.number,
 };
 
-Text.defaultProps = {
+BasePText.defaultProps = {
     color: '#000000',
     fontSize: 14,
 };
 
-export default Text;
+export default BasePText;

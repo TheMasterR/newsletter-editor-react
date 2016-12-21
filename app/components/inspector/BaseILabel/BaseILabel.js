@@ -4,19 +4,19 @@
 
 import React, { Component, PropTypes } from 'react';
 
-class BaseLabel extends Component {
+class BaseILabel extends Component {
     render() {
         const { label, skin } = this.props;
 
         return (
-            <span className={`baseLabel ${skin}`} >
+            <span className={`baseILabel ${skin}`} >
                 {label}
             </span>
         );
     }
 }
 
-BaseLabel.propTypes = {
+BaseILabel.propTypes = {
     label: PropTypes.string.isRequired,
     skin: PropTypes.oneOf([
         'white', 'black',

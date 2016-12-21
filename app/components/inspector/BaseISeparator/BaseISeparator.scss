@@ -1,0 +1,10 @@
+.baseISeparator {
+    margin: 10px 5%;
+    width: 90%;
+    &.white {
+        background-color: #fff;
+    }
+    &.black {
+        background-color: #000;
+    }
+}
