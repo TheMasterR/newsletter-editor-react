@@ -30,3 +30,5 @@ BasePImage.defaultProps = {
     height: 'auto',
     width: 'auto',
 };
+
+export default BasePImage;

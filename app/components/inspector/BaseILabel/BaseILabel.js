@@ -22,3 +22,5 @@ BaseILabel.propTypes = {
         'white', 'black',
     ]),
 };
+
+export default BaseILabel;

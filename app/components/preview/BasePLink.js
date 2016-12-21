@@ -37,3 +37,5 @@ BasePLink.defaultProps = {
     underline: 'underline',
     skin: 'black',
 };
+
+export default BasePLink;

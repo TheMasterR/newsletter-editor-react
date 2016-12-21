@@ -45,3 +45,5 @@ BaseISwitch.defaultProps = {
     on: false,
     skin: 'white',
 };
+
+export default BaseISwitch;

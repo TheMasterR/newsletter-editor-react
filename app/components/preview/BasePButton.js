@@ -48,3 +48,5 @@ BasePButton.defaultProps = {
     borderStyle: 'solid',
     borderColor: '#000000',
 };
+
+export default BasePButton;

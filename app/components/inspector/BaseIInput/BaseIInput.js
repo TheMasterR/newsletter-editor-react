@@ -25,3 +25,5 @@ BaseIInput.defaultProps = {
     type: 'text',
     placeholder: '',
 };
+
+export default BaseIInput;

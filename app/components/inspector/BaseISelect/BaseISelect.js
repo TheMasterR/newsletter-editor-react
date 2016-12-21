@@ -72,3 +72,5 @@ BaseISelect.defaultProps = {
     defaultOption: '',
     skin: 'white',
 };
+
+export default BaseISelect;

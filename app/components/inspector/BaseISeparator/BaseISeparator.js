@@ -30,3 +30,5 @@ BaseISeparator.defaultProps = {
     thickness: 1,
     skin: 'white',
 };
+
+export default BaseISeparator;
