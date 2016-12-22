@@ -13,7 +13,7 @@ class Preview extends Component {
         const { onShowInspector } = this.props;
 
         return (
-            <div className="preview" onClick={onShowInspector()}>
+            <div className="preview" onClick={onShowInspector}>
                 <BasePButton label="Lorem ipsum" href=""/>
                 <BasePImage src="#" altText="Lorem ipsum" />
                 <BasePLink href="#">
