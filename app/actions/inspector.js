@@ -4,9 +4,11 @@
 
 import { SHOW_INSPECTOR, HIDE_INSPECTOR } from './types';
 
-export const showInspector = () => {
+export const showInspector = (x, y) => {
     return {
         type: SHOW_INSPECTOR,
+        x,
+        y,
     };
 };
 

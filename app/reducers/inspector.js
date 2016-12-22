@@ -7,6 +7,8 @@ import { SHOW_INSPECTOR, HIDE_INSPECTOR } from '../actions/types';
 
 const initialState = iMap({
     open: false,
+    x: 0,
+    y: 0,
 });
 
 const inspector = (state = initialState, action) => {
@@ -14,6 +16,8 @@ const inspector = (state = initialState, action) => {
         case SHOW_INSPECTOR:
             return state.merge({
                 open: true,
+                x: action.x,
+                y: action.y,
             });
         case HIDE_INSPECTOR:
             return state.merge({

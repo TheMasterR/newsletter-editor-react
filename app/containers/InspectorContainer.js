@@ -3,22 +3,19 @@
  */
 
 import { connect } from 'react-redux';
-import { showInspector, hideInspector } from '../actions/inspector';
+import { hideInspector } from '../actions/inspector';
 import Inspector from '../components/inspector/Inspector/Inspector';
 
 const mapStateToProps = (state) => {
     return {
         open: state.inspector.get('open'),
-        x: 100,
-        y: 100,
+        x: state.inspector.get('x'),
+        y: state.inspector.get('y'),
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onShowInspector() {
-            dispatch(showInspector());
-        },
         onHideInspector() {
             dispatch(hideInspector());
         }

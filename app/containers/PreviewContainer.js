@@ -3,7 +3,7 @@
  */
 
 import { connect } from 'react-redux';
-import { showInspector, hideInspector } from '../actions/inspector';
+import { showInspector } from '../actions/inspector';
 import Preview from '../components/preview/Preview/Preview';
 
 const mapStateToProps = (state) => {
@@ -14,11 +14,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onShowInspector() {
-            dispatch(showInspector());
-        },
-        onHideInspector() {
-            dispatch(hideInspector());
+        onShowInspector(ev) {
+            const x = ev.pageX;
+            const y = ev.pageY;
+
+            dispatch(showInspector(x, y));
         },
     };
 };
