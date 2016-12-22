@@ -2,10 +2,10 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 const App = ({ children }) =>
-    <div>
+    <div className="editorInnerContainer">
         { children }
         <footer>
-            <Link to="/">Filterable Table</Link>
+            <Link to="/">Newsletter editor</Link>
             <Link to="/about">About</Link>
         </footer>
     </div>;

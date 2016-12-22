@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () =>
     <div>
-        Just a dummy page to showcase react-router!
+        A simple React Redux newsletter editor, created by bulanmaster and TheMasterR.
     </div>;
 
 
