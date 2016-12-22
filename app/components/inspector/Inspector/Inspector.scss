@@ -3,7 +3,7 @@
     white-space: nowrap;
     .inspectorContainer {
         background-color: #000;
-        color: #eee;
+        color: $base-inspector-color;
         padding: 10px;
     }
     .close {
