@@ -1,8 +1,19 @@
-@import "./components/inspector/BaseIInput/BaseIInput.scss";
-@import "./components/inspector/BaseILabel/BaseILabel.scss";
-@import "./components/inspector/BaseISelect/BaseISelect.scss";
-@import "./components/inspector/BaseISeparator/BaseISeparator.scss";
-@import "./components/inspector/BaseISwitch/BaseISwitch.scss";
+@import "./components/inspector/Inspector/Inspector";
+@import "./components/inspector/BaseIInput/BaseIInput";
+@import "./components/inspector/BaseILabel/BaseILabel";
+@import "./components/inspector/BaseISelect/BaseISelect";
+@import "./components/inspector/BaseISeparator/BaseISeparator";
+@import "./components/inspector/BaseISwitch/BaseISwitch";
+
+html,
+body,
+#root {
+    font: normal 12px Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
 
 footer {
     margin-top: 20px;

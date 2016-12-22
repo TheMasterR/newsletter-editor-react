@@ -1,0 +1,35 @@
+.inspector {
+    position: absolute;
+    white-space: nowrap;
+    .inspectorContainer {
+        background-color: #000;
+        color: #eee;
+        padding: 10px;
+    }
+    .close {
+        background-color: #000;
+        border-radius: 100%;
+        cursor: pointer;
+        height: 10px;
+        position: absolute;
+        right: -5px;
+        text-align: center;
+        top: -5px;
+        width: 10px;
+        &::before,
+        &::after {
+            background-color: #fff;
+            content: '';
+            height: 2px;
+            left: 0;
+            margin-top: -1px;
+            position: absolute;
+            top: 50%;
+            transform: rotate(45deg);
+            width: 100%;
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}

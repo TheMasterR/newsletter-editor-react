@@ -27,14 +27,14 @@ class BaseISelect extends Component {
     }
 
     render() {
-        const { optionsList, defaultOption, skin } = this.props;
+        const { optionsList, skin } = this.props;
         const { selectedOption, open } = this.state;
 
         const options = optionsList.map((option) => {
             return (
                 <div
                     key={option}
-                    className={`option${selectedOption === option ? ' selected' : ''}`}
+                    className={`option ${selectedOption === option ? ' selected' : ''}`}
                     onClick={this.onOptionClick.bind(this, option)}
                 >
                     {option}
